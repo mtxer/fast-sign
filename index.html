@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>分发下载</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/qrcode.min.js"></script>
+</head>
+<body>
+
+<div class="weixin-tip">
+    <p>
+        <img id="iOS_tips" style="width: 100%;" src="images/iosweixin.png" alt="微信打开">
+    </p>
+</div>
+<div class="container bs-docs-container" id="installView">
+    <div class="row">
+        <div class="col-md-12" role="main">
+            <div class="bs-example">
+                <div class="col-md-2 col-sm-3 col-xs-4" id="icon">
+                    <img src="icon.png" onerror="javascript:this.src='images/no_img.png'">
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-8">
+                    <div class="name">
+                        <img id='appType' src="images/ios.png" />
+                        <h2>这是你的应用名称</h2>
+                    </div>
+                    <div class="name">
+
+                        <button type="button" class="btn btn-primary download-btn" onclick="download()">  <i class="icon iconfont "></i> <span>下载安装</span></button>
+
+                    </div>
+                </div>
+
+                <div class="col-md-2" id="qrCode">
+
+                </div>
+            </div>
+
+            <div class="bs-example mt-xs-30 rate-info">
+                <div class="col-xs-9 text-left">
+                    <p class="rate-info-p">
+                        <strong>4.9</strong>
+                        <img src="images/star.png">
+                    </p>
+                    <span>67868个评分</span>
+                </div>
+                <div class="col-xs-3 text-right">
+                    <p><strong>4+</strong></p>
+                    <span>年龄</span>
+                </div>
+            </div>
+
+            <div class="bs-example mt-xs-30 description">
+                <div class="col-xs-12">
+                    <h2>简介</h2>
+                    <p>这是应用简介</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="bs-example comment-info">
+                <div class="col-xs-12">
+                    <h2>评分及评论</h2>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <div style="max-width: 175px">
+                        <h1 class="text-center">4.9</h1>
+                        <p class="text-center">满分 5 分</p>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-xs-9 mt-xs-20 calc">
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="874" height="96" viewBox="0 0 874 96">
+                        <g id="组_446" data-name="组 446" transform="translate(-868 -843)">
+                            <path id="多边形_21" data-name="多边形 21" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(868 843)" fill="#8e8f92"/>
+                            <path id="多边形_22" data-name="多边形 22" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(885 843)" fill="#8e8f92"/>
+                            <path id="多边形_23" data-name="多边形 23" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(902 843)" fill="#8e8f92"/>
+                            <path id="多边形_24" data-name="多边形 24" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(919 843)" fill="#8e8f92"/>
+                            <path id="多边形_25" data-name="多边形 25" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(936 843)" fill="#8e8f92"/>
+                            <path id="多边形_21-2" data-name="多边形 21" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(868 863)" fill="#8e8f92"/>
+                            <path id="多边形_22-2" data-name="多边形 22" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(885 863)" fill="#8e8f92"/>
+                            <path id="多边形_23-2" data-name="多边形 23" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(902 863)" fill="#8e8f92"/>
+                            <path id="多边形_24-2" data-name="多边形 24" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(919 863)" fill="#8e8f92"/>
+                            <path id="多边形_25-2" data-name="多边形 25" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(936 863)" fill="#8e8f92"/>
+                            <path id="多边形_22-3" data-name="多边形 22" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(885 883)" fill="#8e8f92"/>
+                            <path id="多边形_23-3" data-name="多边形 23" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(902 883)" fill="#8e8f92"/>
+                            <path id="多边形_24-3" data-name="多边形 24" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(919 883)" fill="#8e8f92"/>
+                            <path id="多边形_25-3" data-name="多边形 25" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(936 883)" fill="#8e8f92"/>
+                            <path id="多边形_23-4" data-name="多边形 23" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(902 904)" fill="#8e8f92"/>
+                            <path id="多边形_24-4" data-name="多边形 24" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(919 904)" fill="#8e8f92"/>
+                            <path id="多边形_25-4" data-name="多边形 25" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(936 904)" fill="#8e8f92"/>
+                            <path id="多边形_23-5" data-name="多边形 23" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(902 925)" fill="#8e8f92"/>
+                            <path id="多边形_24-5" data-name="多边形 24" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(919 925)" fill="#8e8f92"/>
+                            <path id="多边形_25-5" data-name="多边形 25" d="M7,0,8.652,5.348H14l-4.326,3.3L11.326,14,7,10.7,2.674,14,4.326,8.652,0,5.348H5.348Z" transform="translate(936 925)" fill="#8e8f92"/>
+                            <rect id="矩形_460" data-name="矩形 460" width="747" height="3" rx="1.5" transform="translate(995 849)" fill="#e9e9ec"/>
+                            <rect id="矩形_461" data-name="矩形 461" width="747" height="3" rx="1.5" transform="translate(995 870)" fill="#e9e9ec"/>
+                            <rect id="矩形_463" data-name="矩形 463" width="779" height="3" rx="1.5" transform="translate(963 890)" fill="#e9e9ec"/>
+                            <rect id="矩形_465" data-name="矩形 465" width="779" height="3" rx="1.5" transform="translate(963 910)" fill="#e9e9ec"/>
+                            <rect id="矩形_467" data-name="矩形 467" width="779" height="3" rx="1.5" transform="translate(963 931)" fill="#e9e9ec"/>
+                            <rect id="矩形_459" data-name="矩形 459" width="623" height="3" rx="1.5" transform="translate(963 849)" fill="#4a4a4e"/>
+                            <rect id="矩形_462" data-name="矩形 462" width="156" height="3" rx="1.5" transform="translate(963 870)" fill="#4a4a4e"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="bs-example description">
+                <div class="col-xs-12">
+                    <h2>新功能</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="bs-example description">
+                <div class="col-xs-12">
+                    <h2>版本</h2>
+                    <p>1.0.0 (Build 1)</p>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="bs-example description">
+                <div class="col-xs-12">
+                    <h2>信息</h2>
+                    <ul>
+                        <li>
+                            <span>经销商</span>
+                            <div class="text-right">这是你的应用名称</div>
+                        </li>
+                        <li>
+                            <span>文件大小</span>
+                            <div class="text-right">30.2M</div>
+                        </li>
+                        <li>
+                            <span>兼容性</span>
+                            <div class="text-right">IOS 9.0 或者高版本</div>
+                        </li>
+                        <li>
+                            <span>语言</span>
+                            <div class="text-right">简体中文</div>
+                        </li>
+                        <li>
+                            <span>年龄分级</span>
+                            <div class="text-right">限4岁以上</div>
+                        </li>
+                        <li>
+                            <span>价格</span>
+                            <div class="text-right">免费</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bs-example description">
+                <div class="col-xs-12">
+                    <h4>免责声明：本网站完全开发者提供App的下载和安装托管，App内部的内容和运营相关事项由App开发者负责，与本网站无关。</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+
+    var appUrls = {
+        ios: 'https://www.test.com/demo.plist',   //ios plist文件 当前域名站点 例如 https://www.test.com/demo.plist
+        android: 'https://www.test.com/demo.apk',  //如果没有 则不填
+    }
+
+    var ua = navigator.userAgent.toLowerCase(),
+        is_wechat = false;
+        device = null;
+    if (ua.match(/MicroMessenger/i) == "micromessenger"||ua.match(/WeiBo/i) == "weibo") {
+        is_wechat = true;
+    }else if(ua.indexOf('mobile mqqbrowser')>-1){
+        is_wechat = true;
+    }else if(ua.indexOf('Safari')>-1){
+        is_wechat = true;
+    }else{
+        is_wechat = false;
+    }
+    var u = navigator.userAgent;
+    if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) {
+        device = 'android';
+        $("#appType").attr('src','images/android.png');
+    }
+
+    if (u.indexOf("iPhone") > -1 || u.indexOf("iOS") > -1) {
+        device = 'iOS';
+        $("#appType").attr('src','images/ios.png');
+
+    }
+
+
+    //如果是微信 QQ浏览器打开
+    if(is_wechat){
+        var img = null;
+        $('.weixin-tip').css('display','block');
+        if(device == 'android'){
+            img = 'images/androidweixin.png';
+        }else if(device == 'iOS'){
+            img = 'images/iosweixin.png';
+        }
+        if(img){
+            $('#iOS_tips').attr('src',img);
+        }
+    }
+
+    download = function () {
+        if(device == 'android'){
+            if(appUrls.android){
+                location.href = appUrls.android;
+            }else{
+                alert('没有安卓分发');
+            }
+        }else if(device == 'iOS'){
+            if(appUrls.ios){
+                //itms-services://?action=download-manifest&url=
+                location.href ='itms-services://?action=download-manifest&url='+appUrls.ios;
+            }else{
+                alert('没有IOS分发');
+            }
+        }
+    }
+
+
+
+    var windowsWith = document.body.clientWidth;
+    if(windowsWith>=768){
+        url = window.location.href;
+        new QRCode(document.getElementById("qrCode"), {
+            text : url,
+            width: 160,
+            height: 160
+        });  // 设置要生成二维码的链接
+    }
+
+</script>
+</body>
+</html>

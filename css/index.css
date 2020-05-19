@@ -1,0 +1,270 @@
+#installView{
+    padding-top: 30px;
+}
+.bs-example{
+    overflow: hidden;
+}
+#icon img,#qrCode img{
+    width: 100%;
+    max-width: 180px;
+}
+#icon img{
+    border-radius: 15px;
+}
+.name{
+    padding: 20px 20px;
+    display: flex;
+    align-content: flex-start;
+}
+.name img{
+    max-width: 30px;
+    height: 30px;
+}
+.name h2{
+    font-weight: bold;
+    padding-left: 15px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.name .btn-primary{
+    background-color: #0477f9 !important;
+    border-color: #0477f9 !important;
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.rate-info .rate-info-p{
+    display: flex;
+    align-items: center;
+}
+.rate-info strong{
+    font-size: 30px;
+    color: #888;
+}
+.rate-info span{
+    font-size: 16px;
+    color: #d8d8d8;
+}
+.rate-info img{
+    margin-left: 5px;
+    width: 140px;
+}
+.mt-xs-30{
+    margin-top: 30px;
+}
+.mt-xs-20{
+    margin-top: 20px;
+}
+.description p{
+    font-size: 16px;
+    line-height: 32px;
+    word-break:break-all;
+}
+.svg{
+    width: 100%;
+}
+.comment-info h1{
+    font-weight: bold;
+    font-size: 60px;
+}
+.comment-info p{
+    color: #7b7b7b;
+    font-size: 14px;
+}
+.description ul{
+    margin: 0;
+    padding: 0;
+}
+.description ul li{
+    display: flex;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.description ul li span{
+    color: #737379;
+}
+.description ul li div{
+    flex: 1;
+    margin-left: 15px;
+}
+.description h4{
+    line-height: 36px;
+}
+we
+hr{
+    margin-top: 30px;
+}
+
+.align-self-center{
+    margin-top: 15px;
+}
+.align-self-center h1{
+    font-size: 7.5rem;
+    font-weight: bold;
+}
+.align-self-center h2{
+    font-size: 2rem;
+}
+
+/*微信*/
+.weixin-tip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    filter: alpha(opacity=80);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.weixin-tip p {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 5%;
+}
+
+@media (max-width: 768px){
+    #installView{
+        padding-top: 15px;
+    }
+    #qrCode{
+        display: none;
+    }
+    .comment-info h1{
+        font-size: 50px;
+    }
+    .align-self-center{
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+    #icon img{
+        border-radius: 10px;
+    }
+    .name{
+        padding: 12px 0px;
+    }
+    .name .btn-primary{
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+    }
+    .name img{
+        max-width: 24px;
+        height: 24px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .rate-info strong{
+        font-size: 20px;
+    }
+    .rate-info span{
+         font-size: 14px;
+     }
+    .rate-info img{
+        width: 100px;
+    }
+    .description h2{
+        font-size: 24px;
+    }
+    .description p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .comment-info h1{
+        font-size: 30px;
+    }
+    .comment-info p{
+        font-size: 12px;
+    }
+    .comment-info .mt-xs-20{
+        margin-top: 0;
+    }
+    .description ul li{
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .description h4{
+         font-size: 18px;
+         line-height: 36px;
+     }
+
+    .calc{
+        width: calc(75% - 15px);
+        overflow: hidden;
+    }
+    .svg{
+        transform: scale(1.5);
+        transform-origin: left;
+    }
+    .description ul li{
+        padding: 15px 0;
+    }
+}
+@media (max-width: 375px){
+    .name{
+        padding: 8px 0px;
+    }
+    .name img{
+        max-width: 24px;
+        height: 24px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .comment-info h1{
+        font-size: 24px;
+    }
+    .description ul li{
+        line-height: 28px;
+        font-size: 14px;
+    }
+    .description h4{
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+@media (max-width: 320px){
+    .name{
+        padding: 6px 0px;
+    }
+    .name .btn-primary{
+        padding: 3px 12px;
+        font-size: 12px;
+    }
+    .name img{
+        max-width: 18px;
+        height: 18px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+
+.turn{
+    -webkit-animation:turn 1s linear infinite;
+    display: inline-block;
+
+}
+/*
+  turn : 定义的动画名称
+  1s : 动画时间
+  linear : 动画以何种运行轨迹完成一个周期
+  infinite :规定动画应该无限次播放
+ */
+@-webkit-keyframes turn{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(90deg);}
+    50%{transform:rotate(180deg);}
+    75%{transform:rotate(270deg);}
+    100%{transform:rotate(360deg);}
+}
