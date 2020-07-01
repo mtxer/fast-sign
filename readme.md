@@ -20,7 +20,7 @@
     替换为自己的png文件
 
 # demo.plist配置
-    查找字符串'https://www.test.com/demo.ipa' 替换为自己的 ipa 网络路径
-    查找字符串'https://www.test.com/icon.png' 替换为自己的 图标 网络路径
+    查找字符串'https://www.test.com/demo.ipa' 替换为自己的 ipa 网络路径(即是上述的demo.ipa)
+    查找字符串'https://www.test.com/icon.png' 替换为自己的 图标 网络路径(即是上述的icon.png)
     查找字符串'com.test.bundleID' 替换为自己的 ipa bundle ID(可不替换)
     查找字符串'这是你的应用名称' 替换为自己的 ipa 应用名称
